@@ -3,7 +3,7 @@ How to install an operating system on a memory card for PCEngines ALIX board (or
 
 - Install VirtualBox
 - Download a linux iso (make sure it is a 32-bit version for the ALIX board)
-- attach you memory card to the Mac, then unmount the disk and give yourself permissions (note that at different times you should check and re-asser the permissions):
+- attach you memory card to the Mac, then unmount the disk and give yourself permissions (note that at different times you should check and re-assert the permissions):
 ```
 diskutil list
 diskutil info /dev/disk2
@@ -11,7 +11,7 @@ diskutil unmountDisk /dev/disk2
 ls -l /dev/disk2*
 sudo chmod 777 /dev/disk2*
 ```
-- make a vmdk that points to the memory card, check and re-asser your permissions: 
+- make a vmdk that points to the memory card, check and re-assert your permissions: 
 ```
 VBoxManage internalcommands createrawvmdk -filename blossom.vmdk -rawdisk /dev/disk2
 diskutil unmountDisk /dev/disk2
