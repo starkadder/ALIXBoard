@@ -24,7 +24,7 @@ You will need to use vi or nano as the editor.  For vi, curser down to the comme
 Then run `apk update`.
 - Install emacs: `apk add emacs-nox`.
 - Install docker: `apk add docker`; to make docker start on boot: `rc-update add docker boot`; to start manually:
-`rc-update add docker boot`.
+`service docker start`.
 - install java `apk add openjdk8-jre`
 - Fetch and run a docker container.  For example, to run cassandra (latest build) in a container named 'entity-resolution':
 `docker run --name entity-resolution -d cassandra:latest`.  
